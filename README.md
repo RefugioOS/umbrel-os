@@ -1,11 +1,11 @@
-# RefuigoOS UmbrelOS Community App Store
+# RefugioOS UmbrelOS Community App Store
 
 Repositorio publicable para UmbrelOS.
 
 URL futura:
 
 ```text
-https://github.com/RefuigoOS/umbrel-os
+https://github.com/RefugioOS/umbrel-os
 ```
 
 El usuario agregara esa URL en:
@@ -20,7 +20,7 @@ Umbrel espera el manifiesto del store en la raiz y una carpeta por app:
 
 ```text
 umbrel-app-store.yml
-refuigo-burn-after-reading/
+refugioos-burn-after-reading/
   umbrel-app.yml
   docker-compose.yml
   icon.png
@@ -29,7 +29,7 @@ refuigo-burn-after-reading/
 
 ## Reglas
 
-- Cada app debe usar un `id` prefijado con `refuigo-`.
+- Cada app debe usar un `id` prefijado con `refugioos-`.
 - Cada app debe tener `umbrel-app.yml`.
 - Cada app debe tener `docker-compose.yml`.
 - No usar `build:` en apps publicas.

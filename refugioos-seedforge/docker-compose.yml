@@ -3,11 +3,11 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: refuigo-seedforge_app_1
+      APP_HOST: refugioos-seedforge_app_1
       APP_PORT: "8000"
 
   app:
-    image: ghcr.io/refuigoos/seedforge:0.1.1-refuigo.1
+    image: ghcr.io/refugioos/seedforge:0.1.1-refugioos.1
     restart: unless-stopped
     environment:
       DB_PATH: /app/data/seedforge.db
@@ -20,11 +20,11 @@ services:
       SF_LOGIN_LOCK_SECONDS: "300"
       SF_TRUSTED_PROXY: "true"
       SF_APP_NAME: SeedForge
-      SF_APP_VENDOR: RefuigoOS
+      SF_APP_VENDOR: RefugioOS
       SF_APP_TAGLINE: Tu seed no sale de tu refugio.
-      SF_AUTHOR: RefuigoOS
-      SF_COPYRIGHT: 2026 RefuigoOS. Todos los derechos reservados.
-      SF_DONATION_TEXT: Ayuda a mantener los recursos de RefuigoOS
+      SF_AUTHOR: RefugioOS
+      SF_COPYRIGHT: 2026 RefugioOS. Todos los derechos reservados.
+      SF_DONATION_TEXT: Ayuda a mantener los recursos de RefugioOS
       SF_DONATION_URL: ""
       SF_DONATION_BTC: ""
       SF_DONATION_LN: ""
