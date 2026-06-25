@@ -2,6 +2,8 @@
 
 Community App Store de RefugioOS para UmbrelOS.
 
+RefugioOS Community App Store for UmbrelOS.
+
 URL para agregar en UmbrelOS:
 
 ```text
@@ -23,7 +25,7 @@ refugioos-seedforge
 refugioos-burn-after-reading
 ```
 
-## Estructura Del Repo
+## Estructura Del Repo / Repository Structure
 
 ```text
 umbrel-app-store.yml
@@ -39,13 +41,18 @@ refugioos-burn-after-reading/
   README.md
 ```
 
-## Notas
+## Notas / Notes
 
-Este repositorio solo contiene las recetas de instalacion para UmbrelOS:
-manifiestos, `docker-compose.yml`, iconos y documentacion minima.
+Este repositorio solo contiene las recetas de instalación para UmbrelOS:
+manifiestos, `docker-compose.yml`, iconos y documentación mínima.
 
-El codigo fuente de las apps no se publica aqui. Las apps usan imagenes Docker
-publicas y versionadas bajo `ghcr.io/refugioos/...`.
+El código fuente de las apps no se publica aquí. Las apps usan imágenes Docker
+públicas y versionadas bajo `ghcr.io/refugioos/...`.
 
 Cada app usa el prefijo `refugioos-`, que coincide con el `id` del store en
 `umbrel-app-store.yml`.
+
+This repository contains only UmbrelOS installation recipes: manifests,
+`docker-compose.yml`, icons, and minimal documentation. App source code is not
+published here; apps use public, versioned Docker images under
+`ghcr.io/refugioos/...`.

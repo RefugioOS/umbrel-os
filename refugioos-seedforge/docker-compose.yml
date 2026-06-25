@@ -12,7 +12,7 @@ services:
     environment:
       DB_PATH: /app/data/seedforge.db
       SF_USER: admin
-      SF_PASS: ${APP_PASSWORD}
+      SF_PASS: refugioos
       SF_SECRET: ${APP_SEED}
       SF_DATA_KEY: ${APP_SEED}
       SF_COOKIE_MAX_AGE: "28800"
