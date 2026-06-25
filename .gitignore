@@ -1,0 +1,52 @@
+# Local secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+
+# Never publish app source code in this app-store repo
+src/
+source/
+backend/
+frontend/
+private/
+private-code/
+repos-privados/
+Dockerfile
+Dockerfile.*
+
+# Runtime data and databases
+data/
+logs/
+exports/
+backups/
+*.db
+*.sqlite
+*.sqlite3
+
+# Build artifacts
+dist/
+build/
+*.zip
+*.tar
+*.tar.gz
+*.s9pk
+
+# Dependencies and local tooling
+node_modules/
+vendor/
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

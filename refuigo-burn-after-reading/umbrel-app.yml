@@ -1,0 +1,28 @@
+manifestVersion: 1
+id: refuigo-burn-after-reading
+category: networking
+name: Burn After Reading
+version: "0.1.6-refuigo.1"
+tagline: Share messages and files that burn after they are viewed
+description: >-
+  Burn After Reading is a simple, standalone pastebin service for sharing
+  messages and files through ephemeral links that are destroyed after they are
+  viewed. This UmbrelOS package is a RefuigoOS port/fork of the Start9Labs
+  project and does not recreate the StartOS Tor/onion integration.
+developer: Start9Labs
+website: https://github.com/Start9Labs/burn-after-reading
+repo: https://github.com/Start9Labs/burn-after-reading
+support: https://github.com/Start9Labs/burn-after-reading/issues
+port: 3480
+dependencies: []
+gallery: []
+permissions: []
+path: ""
+defaultUsername: "admin"
+defaultPassword: "Set APP_PASSWORD before first start"
+releaseNotes: >-
+  RefuigoOS UmbrelOS port/fork based on Start9Labs/burn-after-reading v0.1.6.
+  Uses a published Docker image instead of building from source inside the app
+  store package.
+submitter: RefuigoOS
+submission: ""

@@ -1,0 +1,38 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: refuigo-seedforge_app_1
+      APP_PORT: "8000"
+
+  app:
+    image: ghcr.io/refuigoos/seedforge:0.1.1-refuigo.1
+    restart: unless-stopped
+    environment:
+      DB_PATH: /app/data/seedforge.db
+      SF_USER: admin
+      SF_PASS: ${APP_PASSWORD}
+      SF_SECRET: ${APP_SEED}
+      SF_DATA_KEY: ${APP_SEED}
+      SF_COOKIE_MAX_AGE: "28800"
+      SF_LOGIN_MAX_ATTEMPTS: "5"
+      SF_LOGIN_LOCK_SECONDS: "300"
+      SF_TRUSTED_PROXY: "true"
+      SF_APP_NAME: SeedForge
+      SF_APP_VENDOR: RefuigoOS
+      SF_APP_TAGLINE: Tu seed no sale de tu refugio.
+      SF_AUTHOR: RefuigoOS
+      SF_COPYRIGHT: 2026 RefuigoOS. Todos los derechos reservados.
+      SF_DONATION_TEXT: Ayuda a mantener los recursos de RefuigoOS
+      SF_DONATION_URL: ""
+      SF_DONATION_BTC: ""
+      SF_DONATION_LN: ""
+    volumes:
+      - ${APP_DATA_DIR}/data:/app/data
+    healthcheck:
+      test: ["CMD-SHELL", "python - <<'PY'\nimport urllib.request\nurllib.request.urlopen('http://127.0.0.1:8000/login', timeout=5)\nPY"]
+      interval: 30s
+      timeout: 8s
+      retries: 5
+      start_period: 30s
