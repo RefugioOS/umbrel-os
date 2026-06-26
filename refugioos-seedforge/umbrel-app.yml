@@ -2,7 +2,7 @@ manifestVersion: 1
 id: refugioos-seedforge
 category: bitcoin
 name: SeedForge
-version: "0.1.2-refugioos.1"
+version: "0.1.3-refugioos.1"
 tagline: Recuperación local BIP39 / Local BIP39 recovery
 description: >-
   ES: SeedForge ayuda al propietario legítimo de una wallet a recuperar frases
@@ -34,6 +34,6 @@ defaultPassword: "refugioos"
 submitter: RefugioOS
 submission: ""
 releaseNotes: >-
-  ES: ES
+  ES: Corrección de error al buscar 6 o más palabras faltantes simultáneamente.
 
-  EN: EN
+  EN: Fixed crash when searching for 6 or more missing words at once.

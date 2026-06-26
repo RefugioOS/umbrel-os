@@ -7,7 +7,7 @@ services:
       APP_PORT: "8000"
 
   app:
-    image: ghcr.io/refugioos/seedforge:0.1.2-refugioos.1
+    image: ghcr.io/refugioos/seedforge:0.1.3-refugioos.1
     restart: unless-stopped
     environment:
       DB_PATH: /app/data/seedforge.db
