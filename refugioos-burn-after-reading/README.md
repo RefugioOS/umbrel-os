@@ -25,6 +25,11 @@ Licencia upstream: GPL-3.0
 - User / Usuario: `admin`.
 - Password / Contraseña: `refugioos`.
 - El password se guarda en `/data/start9/config.yaml` durante el primer inicio.
+- El contenido se quema cuando el lector pulsa `View` en la interfaz web. Una
+  petición directa `GET /api/data/<hash>` solo descarga el contenido; la
+  interfaz llama después a `DELETE /api/data/<hash>`.
+- El proxy de autenticación de Umbrel está desactivado para que los enlaces
+  efímeros puedan abrirse desde fuera de la sesión de Umbrel.
 - La licencia upstream se incluye en `LICENSE.upstream-GPL-3.0.txt`.
 
 ## Notes
@@ -35,3 +40,8 @@ Licencia upstream: GPL-3.0
 - It does not include the native StartOS Tor/onion integration.
 - User: `admin`.
 - Password: `refugioos`.
+- Content is burned when the reader presses `View` in the web interface. A raw
+  `GET /api/data/<hash>` only downloads the content; the interface then calls
+  `DELETE /api/data/<hash>`.
+- Umbrel proxy authentication is disabled so ephemeral links can be opened
+  outside the Umbrel session.

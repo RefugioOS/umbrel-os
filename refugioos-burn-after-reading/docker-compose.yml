@@ -5,6 +5,7 @@ services:
     environment:
       APP_HOST: refugioos-burn-after-reading_app_1
       APP_PORT: "80"
+      PROXY_AUTH_ADD: "false"
 
   app:
     image: ghcr.io/refugioos/burn-after-reading:0.1.6-refugioos.1

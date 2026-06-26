@@ -2,7 +2,7 @@ manifestVersion: 1
 id: refugioos-burn-after-reading
 category: networking
 name: Burn After Reading
-version: "0.1.6-refugioos.1"
+version: "0.1.6-refugioos.2"
 tagline: Mensajes y archivos efímeros / Ephemeral messages and files
 description: >-
   ES: Burn After Reading permite compartir mensajes y archivos mediante enlaces
@@ -21,18 +21,15 @@ repo: https://github.com/Start9Labs/burn-after-reading
 support: https://github.com/Start9Labs/burn-after-reading/issues
 port: 3480
 dependencies: []
-gallery: []
+gallery:
+  - 1.png
 permissions: []
 path: ""
 defaultUsername: "admin"
 defaultPassword: "refugioos"
 releaseNotes: >-
-  ES: Port/Fork de RefugioOS para UmbrelOS basado en
-  Start9Labs/burn-after-reading v0.1.6. Usa una imagen Docker publicada y
-  versionada en lugar de compilar desde la tienda.
+  ES: Bug fix in the UmbrelOS package
 
-  EN: RefugioOS UmbrelOS port/fork based on Start9Labs/burn-after-reading
-  v0.1.6. Uses a published, versioned Docker image instead of building from
-  source inside the app store package.
+  EN: Bug fix in the UmbrelOS package
 submitter: RefugioOS
 submission: ""
