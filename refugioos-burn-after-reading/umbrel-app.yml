@@ -1,0 +1,35 @@
+manifestVersion: 1
+id: refugioos-burn-after-reading
+category: networking
+name: Burn After Reading
+version: "0.1.6-refugioos.2"
+tagline: Mensajes y archivos efímeros / Ephemeral messages and files
+description: >-
+  ES: Burn After Reading permite compartir mensajes y archivos mediante enlaces
+  efímeros que se destruyen después de ser vistos. Credenciales iniciales:
+  usuario admin y contraseña refugioos.
+
+  EN: Burn After Reading lets you share messages and files through ephemeral
+  links that are destroyed after they are viewed. Initial credentials: user
+  admin and password refugioos.
+
+  This UmbrelOS package is a RefugioOS port/fork of the Start9Labs project and
+  does not recreate the StartOS Tor/onion integration.
+developer: Start9Labs
+website: https://github.com/Start9Labs/burn-after-reading
+repo: https://github.com/Start9Labs/burn-after-reading
+support: https://github.com/Start9Labs/burn-after-reading/issues
+port: 3480
+dependencies: []
+gallery:
+  - 1.png
+permissions: []
+path: ""
+defaultUsername: "admin"
+defaultPassword: "refugioos"
+releaseNotes: >-
+  ES: Bug fix in the UmbrelOS package
+
+  EN: Bug fix in the UmbrelOS package
+submitter: RefugioOS
+submission: ""
