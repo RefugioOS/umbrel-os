@@ -1,0 +1,36 @@
+manifestVersion: 1
+id: refugioos-zebra
+category: finance
+name: Zebra (Zcash Node)
+version: "6.3.0-refugioos.1"
+tagline: Nodo Zcash completo / Full Zcash node
+description: >-
+  ES: Port puro del nodo Zcash Zebra (zebrad) de la Zcash Foundation, con los
+  binarios oficiales verificados por SHA256. Mantiene la cadena Zcash en tu
+  Umbrel (P2P 8233), expone RPC JSON en 8232 con autenticacion por cookie y
+  endpoints de salud /healthy y /ready en 8080. Requiere ~300 GB de disco y
+  4 GB de RAM minimo (16 GB recomendado); el sync inicial es largo. La app no
+  tiene interfaz grafica: al abrirla veras el estado del nodo.
+
+  EN: Pure port of the Zcash Foundation's Zebra (zebrad) Zcash node using the
+  official SHA256-verified binaries. Keeps the Zcash chain on your Umbrel
+  (P2P 8233), exposes JSON-RPC on 8232 with cookie auth, and health endpoints
+  /healthy and /ready on 8080. Requires ~300 GB disk and 4 GB RAM minimum
+  (16 GB recommended); initial sync takes a long time. No GUI: opening the app
+  shows the node status.
+developer: RefugioOS
+website: https://github.com/RefugioOS
+dependencies: []
+repo: https://github.com/ZcashFoundation/zebra
+support: https://github.com/ZcashFoundation/zebra/issues
+port: 8080
+gallery: []
+path: "/healthy"
+defaultUsername: ""
+defaultPassword: ""
+submitter: RefugioOS
+submission: ""
+releaseNotes: >-
+  ES: Port de Zebra v6.3.0 (binarios oficiales verificados por SHA256, imagen ghcr.io/refugioos/zebra).
+  
+  EN: Port of Zebra v6.3.0 (official SHA256-verified binaries, image ghcr.io/refugioos/zebra).

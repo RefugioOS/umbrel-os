@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="SeedForge">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="40" x2="420" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1320"/>
+      <stop offset="1" stop-color="#123d2b"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="100" y1="80" x2="410" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="256" cy="232" r="166" fill="none" stroke="url(#ring)" stroke-width="18"/>
+  <path d="M255 277c0-72 50-112 113-111-5 60-45 104-104 111l-9 1Z" fill="#2f9e59"/>
+  <path d="M247 278c-56-7-94-45-100-97 58-3 104 33 106 97h-6Z" fill="#237a47"/>
+  <path d="M256 306c0-49 1-82 9-120" fill="none" stroke="#f59e0b" stroke-width="14" stroke-linecap="round"/>
+  <text x="256" y="418" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800" fill="#ffffff">SeedForge</text>
+</svg>

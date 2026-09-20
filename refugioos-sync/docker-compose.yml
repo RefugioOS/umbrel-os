@@ -1,0 +1,28 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: refugioos-sync_syncthing_1
+      APP_PORT: "8384"
+      PROXY_AUTH_ADD: "false"
+
+  syncthing:
+    image: syncthing/syncthing:latest
+    restart: unless-stopped
+    environment:
+      PUID: "1000"
+      PGID: "1000"
+    volumes:
+      - ${APP_DATA_DIR}/config:/var/syncthing
+      - /media:/external:rslave
+    ports:
+      - "22000:22000/tcp"
+      - "22000:22000/udp"
+      - "21027:21027/udp"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://127.0.0.1:8384/rest/noauth/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s

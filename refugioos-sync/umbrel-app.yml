@@ -1,0 +1,57 @@
+manifestVersion: 1
+id: refugioos-sync
+category: files
+name: Refugio Sync
+version: "1.0.0-refugioos.1"
+tagline: Syncthing con acceso a discos externos / Syncthing with external drive access
+description: >-
+  ES: Refugio Sync es una variante de Syncthing para UmbrelOS que, a diferencia
+  de la app oficial, tiene acceso directo a los discos externos y USB conectados
+  a tu equipo. UmbrelOS monta esos discos en /media del host; Refugio Sync los
+  expone dentro del contenedor en /external para que puedas añadirlos como
+  carpetas desde la interfaz de Syncthing sin necesidad de SSH.
+
+  Caso de uso típico: conectas un USB, abres la app, añades /external/<nombre-disco>
+  como carpeta en Syncthing y la sincronizas con tu portátil, móvil u otro nodo
+  (por ejemplo, la tarjeta SD de un router 4G). Todo P2P, cifrado en tránsito,
+  sin pasar por la nube.
+
+  SEGURIDAD: para carpetas que solo quieres exportar, pon el tipo en "Send Only"
+  en la UI de Syncthing. Expulsa siempre el disco desde la app Files de UmbrelOS
+  antes de desconectarlo.
+
+  EN: Refugio Sync is a Syncthing variant for UmbrelOS that — unlike the
+  official Syncthing app — has direct access to external drives and USB devices.
+  UmbrelOS mounts those drives at /media on the host; Refugio Sync exposes them
+  inside the container at /external so you can add them as folders from the
+  Syncthing UI without any SSH access.
+
+  Typical use case: plug in a USB drive, open the app, add /external/<drive-name>
+  as a folder in Syncthing, sync it P2P with a laptop, phone, or another
+  Syncthing node (e.g., the SD card of a 4G router). All P2P, encrypted in
+  transit, no cloud involved.
+
+  SECURITY: for folders you only want to push out, set the folder type to
+  "Send Only" in the Syncthing UI. Always eject the drive from UmbrelOS Files
+  before unplugging.
+
+  Refugio Sync usa la imagen oficial syncthing/syncthing sin modificaciones.
+  Empaquetado por RefugioOS.
+developer: Syncthing
+website: https://syncthing.net
+dependencies: []
+repo: https://github.com/syncthing/syncthing
+support: https://forum.syncthing.net
+port: 8384
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: RefugioOS
+submission: ""
+releaseNotes: >-
+  ES: Primera versión de Refugio Sync para RefugioOS. Syncthing con acceso a
+  /media para discos externos y USB conectados al Umbrel.
+
+  EN: First release of Refugio Sync for RefugioOS. Syncthing with /media access
+  for external drives and USB devices connected to Umbrel.
