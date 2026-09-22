@@ -1,0 +1,35 @@
+manifestVersion: 1
+id: refugioos-password-pusher
+category: security
+name: Password Pusher
+version: "2.14.0-refugioos.1"
+tagline: Comparte contrasenas y secretos que se autodestruyen
+description: >-
+  ES: Password Pusher permite compartir contrasenas, texto y enlaces con
+  expiracion configurable (por numero de visitas o por tiempo), con opcion de
+  passphrase adicional. Es el companero ideal de Burn After Reading para pasar
+  credenciales de forma efimera y auditada.
+
+  EN: Password Pusher lets you share passwords, text and URLs that expire after
+  a set number of views or time, with an optional passphrase. The perfect
+  companion to ephemeral secret sharing.
+
+  This UmbrelOS package is a RefugioOS port built from source (the upstream
+  project only publishes amd64 containers), pinned to an upstream commit.
+developer: pglombardo (Apnotic LLC)
+website: https://pwpush.com
+repo: https://github.com/pglombardo/PasswordPusher
+support: https://github.com/pglombardo/PasswordPusher/issues
+port: 3481
+dependencies: []
+gallery: []
+permissions: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+releaseNotes: >-
+  ES: Port inicial de Password Pusher v2.14.0 (compilado desde codigo, amd64 + arm64).
+
+  EN: Initial Password Pusher v2.14.0 port (built from source, amd64 + arm64).
+submitter: RefugioOS
+submission: ""

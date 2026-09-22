@@ -1,0 +1,35 @@
+manifestVersion: 1
+id: refugioos-2fauth
+category: security
+name: 2FAuth
+version: "8.0.2-refugioos.1"
+tagline: Gestiona tus codigos 2FA y genera OTP desde tu servidor
+description: >-
+  ES: 2FAuth es un gestor web de autenticacion de doble factor: guarda los
+  secretos TOTP/HOTP de tus cuentas en tu propio servidor y genera los codigos
+  desde cualquier navegador. Soporta WebAuthn/passkeys, grupos, compartir
+  cuentas de forma segura, API y extensiones de navegador/oficiales.
+
+  EN: 2FAuth is a web manager for two-factor authentication: store your TOTP/
+  HOTP secrets on your own server and generate codes from any browser. Supports
+  WebAuthn/passkeys, groups, secure sharing, an API and official extensions.
+
+  This UmbrelOS package is a RefugioOS port built from source, pinned to an
+  upstream commit.
+developer: Bubka
+website: https://docs.2fauth.app
+repo: https://github.com/Bubka/2FAuth
+support: https://github.com/Bubka/2FAuth/issues
+port: 3482
+dependencies: []
+gallery: []
+permissions: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+releaseNotes: >-
+  ES: Port inicial de 2FAuth v8.0.2 (compilado desde codigo, amd64 + arm64).
+
+  EN: Initial 2FAuth v8.0.2 port (built from source, amd64 + arm64).
+submitter: RefugioOS
+submission: ""

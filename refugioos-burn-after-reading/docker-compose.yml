@@ -8,7 +8,7 @@ services:
       PROXY_AUTH_ADD: "false"
 
   app:
-    image: ghcr.io/refugioos/burn-after-reading:0.1.6-refugioos.1
+    image: ghcr.io/refugioos/burn-after-reading:0.1.6-refugioos.2
     restart: on-failure
     environment:
       PORT: "80"

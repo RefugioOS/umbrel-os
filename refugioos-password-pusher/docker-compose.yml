@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: refugioos-password-pusher_app_1
+      APP_PORT: "5100"
+      PROXY_AUTH_ADD: "false"
+
+  app:
+    image: ghcr.io/refugioos/password-pusher:2.14.0-refugioos.1
+    restart: on-failure
+    environment:
+      PORT: "5100"
+    volumes:
+      - ${APP_DATA_DIR}/data:/opt/PasswordPusher/storage
