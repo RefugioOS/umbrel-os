@@ -27,7 +27,8 @@ dependencies: []
 repo: https://github.com/RefugioOS/seedforge-docker
 support: https://github.com/RefugioOS/seedforge-docker/issues
 port: 8000
-gallery: []
+gallery:
+  - 1.png
 path: ""
 defaultUsername: "admin"
 defaultPassword: "refugioos"
