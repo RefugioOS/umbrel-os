@@ -4,7 +4,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: refugioos-zebra_zebrad_1
-      APP_PORT: "8080"
+      APP_PORT: "48232"
       PROXY_AUTH_ADD: "false"
 
   zebrad:

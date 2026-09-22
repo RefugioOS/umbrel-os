@@ -10,7 +10,7 @@ de la Zcash Foundation para UmbrelOS.
 - Imagen versionada: `ghcr.io/refugioos/zebra:6.3.0-refugioos.2` (amd64 + arm64).
 - Binarios oficiales verificados por SHA256 (sin forks ni parches).
 - Puertos: **8233** P2P Mainnet, **8232** RPC JSON (cookie auth en
-  `/data/.cookie`), **8080** pagina de estado local (estado, /healthy, /ready
+  `/data/.cookie`), **48232** pagina de estado local (estado, /healthy, /ready
   y log del sync).
 - Requisitos: ~300 GB de disco libre, 4 GB de RAM minimo (16 GB recomendado).
 - Recursos: el contenedor limita su RAM a **4 GB** por defecto (minimo
@@ -43,7 +43,7 @@ Zcash node for UmbrelOS.
 - Versioned image: `ghcr.io/refugioos/zebra:6.3.0-refugioos.2` (amd64 + arm64).
 - Official SHA256-verified binaries (no forks or patches).
 - Ports: **8233** P2P Mainnet, **8232** JSON-RPC (cookie auth in
-  `/data/.cookie`), **8080** local status page (state, /healthy, /ready and
+  `/data/.cookie`), **48232** local status page (state, /healthy, /ready and
   the sync log).
 - Requirements: ~300 GB free disk, 4 GB RAM minimum (16 GB recommended).
 
