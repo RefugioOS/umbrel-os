@@ -13,6 +13,11 @@ de la Zcash Foundation para UmbrelOS.
   `/data/.cookie`), **8080** pagina de estado local (estado, /healthy, /ready
   y log del sync).
 - Requisitos: ~300 GB de disco libre, 4 GB de RAM minimo (16 GB recomendado).
+- Recursos: el contenedor limita su RAM a **4 GB** por defecto (minimo
+  oficial, suficiente para un nodo de baja demanda: solo sync) y rota los
+  logs (20 MB x 3), para dejar RAM libre al resto de apps. Si la pagina
+  muestra reinicios por RAM, sube el tope con `ZEBRA_MEM_LIMIT=8g`. La cadena
+  no se puede podar: la pagina avisa cuando quedan < 25 GB libres.
 
 Al abrir la app desde Umbrel veras la pagina de estado del nodo: si zebrad
 cae se relanza solo y el error aparece en pantalla, y durante el sync inicial
