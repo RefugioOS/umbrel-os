@@ -2,7 +2,7 @@ manifestVersion: 1
 id: refugioos-seedforge
 category: bitcoin
 name: SeedForge
-version: "0.1.1-refugioos.1"
+version: "2.5.0-refugioos.1"
 tagline: Recuperación local BIP39 / Local BIP39 recovery
 description: >-
   ES: SeedForge ayuda al propietario legítimo de una wallet a recuperar frases
@@ -35,10 +35,11 @@ defaultPassword: "refugioos"
 submitter: RefugioOS
 submission: ""
 releaseNotes: >-
-  ES: Settings rediseñado con APIs externas separadas de nodos/APIs propias,
-  listado de API keys BTC/ETH, varias fuentes BTC tipo Esplora y textos visibles
-  corregidos.
+  ES: SeedForge V2.5 — edición Lite/Pro (cluster de workers remotos en Pro,
+  deshabilitado en Lite), SQLite robustecido (sin más "database is locked"),
+  validación del volumen de datos, backups periódicos, exportar/importar
+  sesiones y escrow de la clave de cifrado.
 
-  EN: Redesigned Settings with external APIs separated from custom nodes/APIs,
-  BTC/ETH API key lists, multiple Esplora-style BTC sources, and corrected UI
-  text.
+  EN: SeedForge V2.5 — Lite/Pro edition (remote worker cluster in Pro, disabled
+  in Lite), hardened SQLite (no more "database is locked"), data-volume
+  validation, periodic backups, session export/import and encryption-key escrow.

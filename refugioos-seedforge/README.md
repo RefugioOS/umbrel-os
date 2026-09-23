@@ -9,7 +9,7 @@ First-party RefugioOS app packaged for the UmbrelOS Community App Store.
 Antes de publicar este repo, la imagen debe existir:
 
 ```text
-ghcr.io/refugioos/seedforge:0.1.1-refugioos.1
+ghcr.io/refugioos/seedforge-v2-5:2.5.0-refugioos.1
 ```
 
 SeedForge usa `admin` como usuario inicial y `refugioos` como contraseña
