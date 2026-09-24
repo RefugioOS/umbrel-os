@@ -1,7 +1,7 @@
 manifestVersion: 1
 id: refugioos-seedforge
 category: bitcoin
-name: SeedForge
+name: SeedForge Lite
 version: "2.5.0-refugioos.1"
 tagline: Recuperación local BIP39 / Local BIP39 recovery
 description: >-
