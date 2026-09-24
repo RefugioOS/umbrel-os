@@ -1,0 +1,43 @@
+manifestVersion: 1
+id: refugioos-dash-miner-lite
+category: bitcoin
+name: Dash Miner Lite (Beta)
+version: "0.1.0-beta.1"
+tagline: Gestiona tu granja de mineros ASIC desde tu LAN (BETA)
+description: >-
+  ES: Dashboard local para escanear tu red, gestionar equipos ASIC, calcular
+  rentabilidad y organizar tus pools de mineria — sin nube, sin cuentas
+  externas. Incluye un bridge integrado que detecta y controla tus mineros
+  (Bitmain, MicroBT/WhatsMiner, Canaan/Avalon, Goldshell, IceRiver, Jasminer,
+  Bitdeer y home-lab tipo Nerdminer/Nerdaxe) directamente en tu red local. La
+  edicion Lite gestiona una sola ubicacion/red; multi-granja, energia con
+  solar, automatizacion y Zigbee/MQTT son de la edicion Pro. Todos los datos
+  viven en el navegador de quien accede; el contenedor no guarda estado propio.
+
+  EN: Local dashboard to scan your network, manage ASIC miners, calculate
+  profitability and organize your mining pools — no cloud, no external
+  accounts. Built-in bridge detects and controls your miners on your LAN.
+
+  BETA: primera version publica, en pruebas (0.1.0-beta.1).
+developer: RefugioOS
+website: https://refugiocibernetico.com/
+dependencies: []
+repo: https://refugiocibernetico.com/
+support: https://refugiocibernetico.com/
+port: 3023
+gallery:
+  - 1.png
+  - 2.png
+  - 3.png
+  - 4.png
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+torOnly: false
+permissions: []
+releaseNotes: >-
+  Primera version publica BETA de Dash Miner Lite: escaner de red con bridge
+  integrado, gestion de equipos, calculadora de rentabilidad y directorio de
+  pools con enlaces de referido. Imagen ghcr.io/refugioos/dash-miner-lite:0.1.0-beta.1.
+submitter: RefugioOS
+submission: ""

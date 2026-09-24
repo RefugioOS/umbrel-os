@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  app:
+    # network_mode: host es necesario porque el bridge integrado
+    # (bridge/bridge.mjs) usa os.networkInterfaces() para detectar la subred
+    # real del servidor y escanear/controlar mineros en tu LAN — con la red
+    # puente por defecto de Docker solo veria la red interna del contenedor.
+    # Mismo patron que Home Assistant y Pi-hole en el store oficial. No hace
+    # falta privileged ni NET_ADMIN: solo se hacen TCP connects salientes
+    # normales, nunca raw sockets.
+    image: ghcr.io/refugioos/dash-miner-lite:0.1.0-beta.1
+    network_mode: host
+    restart: on-failure
