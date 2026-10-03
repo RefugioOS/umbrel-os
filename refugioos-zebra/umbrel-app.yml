@@ -2,7 +2,7 @@ manifestVersion: 1
 id: refugioos-zebra
 category: finance
 name: Zebra (Zcash Node)
-version: "6.3.0-refugioos.2"
+version: "6.4.2-refugioos.1"
 tagline: Nodo Zcash completo / Full Zcash node
 description: >-
   ES: Port puro del nodo Zcash Zebra (zebrad) de la Zcash Foundation, con los
@@ -31,6 +31,6 @@ defaultPassword: ""
 submitter: RefugioOS
 submission: ""
 releaseNotes: >-
-  ES: Port de Zebra v6.3.0 (binarios oficiales verificados por SHA256, imagen ghcr.io/refugioos/zebra).
+  ES: Port de Zebra v6.4.2 (binarios oficiales verificados por SHA256, imagen ghcr.io/refugioos/zebra).
   
-  EN: Port of Zebra v6.3.0 (official SHA256-verified binaries, image ghcr.io/refugioos/zebra).
+  EN: Port of Zebra v6.4.2 (official SHA256-verified binaries, image ghcr.io/refugioos/zebra).
